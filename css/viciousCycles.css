@@ -1,0 +1,313 @@
+/*
+Blackboard Username:    mjohnson4  Malinda Johnson
+Date:   03/30/2020
+File:   viciousCycles.css
+Purpose:    Use an external CSS style sheet for responsive design
+*/
+
+/* Style to create a fluid image */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+.services1 h2 {
+	text-align: left;
+}
+
+.projects1 h2 {
+	text-align: left;
+}
+
+.article1 figure p {
+	height: 100px;
+}
+
+.article1 figure figcaption {
+	text-align: center;
+	font-weight: bold;
+}
+
+.article1 figure p {
+	margin-right: 2em;
+	margin-left: 2em;
+}
+
+.article2 figure figcaption {
+	text-align: center;
+	font-weight: bold;
+}
+
+.twitter {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.current {
+	color: #946228;
+}
+
+.center {
+	text-align: center;
+}
+
+.center a {
+	padding-right: 0.3em;
+}
+
+/********* Styles for Mobile Layout *********/
+
+/* Style for the container centers the page and specifies the width */
+#container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Style for the banner in the header aligns the content left */
+banner {
+	text-align: left;
+}
+
+/* Style for nav specifies text properties */
+nav {
+	clear: left;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.25em;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Style specifies padding and margins for unordered list */
+nav ul {
+	padding: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+/* Style for nav li specifies the background color, rounded corners, removes bullet style, and applies margins and padding for list items within the navigation */
+nav li {
+	background-color: #FFC480;
+	border-radius: 1em;
+	list-style-type: none;
+	margin: 0.3em;
+	padding: 0.4em;
+}
+
+/* Style changes navigation link text color to white and removes the underline */
+nav li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+/* Style for the main specifies a block display, text properties, margins, padding, rounded corners, and borders  */
+main {
+	display: block;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 1em;
+	margin-top: 0.5em;
+	padding: 1em;
+	background-color: #FFFFFF;
+	border-top: solid 0.2em #946228;
+}
+
+/* Style for the footer specifies font size, font-weight, text alignment, top & bottom padding with background-color (bar look) and top margin */
+footer {
+	font-size: .70em;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	background-color: #666666;
+	margin-top: -1.2em;
+}
+
+/* Style for the footer anchor element (email address), so that it appears in white and without underline.  Style for anchor elements (email address, twitter logo, facebook logo) has left and right padding to ensure visibility with additional spacing. */
+footer a {
+	color: #FFFFFF;
+	text-decoration: none;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0.5em;
+}
+
+/********* Media query for tablet layout *********/
+
+@media only screen and (min-width: 550px) {
+
+	nav {
+		padding-bottom: 2%;
+		margin-left: 25%;
+		width: 70%;
+	}
+
+	/* Style specifies a horizontal display for navigation links */
+	nav li {
+		display: inline;
+		float: left;
+		margin-left: 1%;
+		margin-right: 1%;
+		padding-left: 0;
+		padding-right: 0;
+		width: 23%;
+		white-space: nowrap;
+	}
+
+	.rightalign {
+		width: 20%;
+	}
+
+	/* Style specifies clear and top margin properties for the main element */
+	main {
+		font-family: 'Nanum Gothic', sans-serif;
+		clear: left;
+		margin-top: 4em;
+	}
+
+}
+
+/********* Media query for desktop layout *********/
+
+@media only screen and (min-width: 770px) {
+
+	/* Style specifies width for container */
+	#container {
+		padding: 0;
+	}
+
+	.banner {
+		text-align: left;
+		width: 30%;
+		padding: 0.7em;
+	}
+
+	h1 {
+		clear: left; 
+		clear: right;
+		text-align: center;
+	}
+
+	/* Style specifies no border, margin, or padding for the main element */
+	main {
+		font-family: 'Nanum Gothic', sans-serif;
+		border-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.pic1 {
+		width: 450px;
+		height: 300px;
+		float: left;
+		margin-top: -3em;
+		margin-left: 0%;
+		margin-right: 20px;
+      	margin-bottom: 20px;
+	  }
+
+	  .article1 figure figcaption {
+		text-align: left;
+		font-weight: bold;
+	}	
+
+	/* Style specifies left and right padding for paragraph elements within the main element */
+	main p {
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+	}
+
+	.article2 {
+		clear: left;
+		clear: right;
+		background-color: #946228;
+		border-bottom: #FFFFFF;
+		margin-top: 2.75em;
+		padding-top: 0.5em;
+		padding-bottom: 2.5em;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	h2 {
+		padding-top: 1em;
+		text-align: right;
+		padding-right: 4.3em;
+	}
+
+	.article2 p {
+		clear: left;
+	}
+
+	.pic2 {
+		width: 300px;
+		height: 240px;
+		float: right;
+		margin-right: 10px;
+		padding-left: 5em;
+		margin-top: -2em;
+	  }
+
+	.article3 {
+		background-color: #FFFFFF;
+		border-bottom: #666666;
+		padding-top: 0.5em;
+		padding-bottom: 1em;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	/* Style specifies margin and padding for the unordered list within the nav */
+	nav ul {		
+		margin: 0;
+		padding: 0;
+	}
+
+	/* Style for navigation list items specifies a border radius, border, margin, width, and padding */
+	nav li {
+		margin-top: -3.4em;
+		width: 33%;
+		border-radius: 0;
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+		padding: 0;
+		background-color: #FFFFFF;
+	}
+
+	/* Style for navigation links specifies display and padding */
+	nav li a {
+		color: #666666;
+		font-size: 1.25em;
+		display: inline-block;
+		padding: 0.7em;
+	}
+
+	/* Style rules for pseudo-classes */
+	nav li a:link {
+		color: #666666;
+		font-size: 1.25em;
+	}
+
+	nav li a:hover {
+		color: #FFA945;
+		font-size: 1.25em;
+	}
+
+	nav li a:active {
+		color: #4D4D4D;
+	}
+
+	nav ul li a .active {
+		color: #4D4D4D;
+	}
+
+	.topNav {
+		float: right;
+		width: 50%;
+	}
+
+}
